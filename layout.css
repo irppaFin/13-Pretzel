@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+}
+/* MOBILE */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("/images/grunge.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#special {
+  padding: 0.5rem;
+  background-color: rgb(21, 102, 102);
+  color: white;
+  border-bottom: 1rem;
+  border-bottom-style: groove;
+}
+/*Hide NavDetails in MOBILE*/
+#navDetails {
+  display: none;
+}
+
+/*Koko sivun WRAPPER FLEX*/
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+}
+#wrapper > * {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  /*ÄLÄ KOSKE YLLÄOLEVIIN ! KOKO SIVUN SÄÄTÖ!*/
+}
+
+/*NAV 1 COLUMN MOBILEEN*/
+#nav1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#nav1 > * {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+/*LOGON SÄÄDÖT*/
+#companyLogo {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/*NAV1 PALIKOIDEN ASETUKSET*/
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+ul li {
+  margin-right: 1rem;
+}
+
+ul li > * {
+  flex-basis: 0%;
+  flex-grow: 1;
+}
+
+#pretzels {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+#main {
+  max-width: 100%;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 1rem;
+}
+
+#p1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#p2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#p3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#p4 {
+  font-size: 1rem;
+}
+
+#sidebar {
+  display: none;
+}
+#logoDown {
+  align-items: center;
+  opacity: 0.4;
+}
+/*
+footer {
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+/*ÄLÄ VÄLITÄ NÄISTÄ VIELÄ*/
+/* TABLET */
+/*
+@media only screen and (min-width: 426px) {
+  #nav1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  #nav1 > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+
+/* DESKTOP */
+/*
+@media only screen and (min-width: 769px) {
+  #wrapper {
+    width: 960px;
+  }
+  #main {
+    width: 60%;
+  }
+  #sidebar {
+    width: 40%;
+  }
+  #sidebar ul {
+    column-count: 2;
+  }
+  #nav ul li {
+    width: 20%;
+  }
+}
+*/
