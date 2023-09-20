@@ -11,12 +11,23 @@ body {
   background-attachment: fixed;
 }
 #special {
-  padding: 0.5rem;
-  background-color: rgb(21, 102, 102);
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  background-color: rgb(74, 99, 99);
   color: white;
-  border-bottom: 1rem;
-  border-bottom-style: groove;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-block-end: 2rem;
+  background-image: url("/images/special-bg.png");
+  background-repeat: repeat-x;
+  background-position: center bottom;
 }
+
+.item2 {
+  color: rgb(162, 162, 162);
+}
+
 /*Hide NavDetails in MOBILE*/
 #navDetails {
   display: none;
@@ -24,9 +35,6 @@ body {
 
 /*Koko sivun WRAPPER FLEX*/
 #wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin-inline-start: 1rem;
   margin-inline-end: 1rem;
 }
@@ -37,41 +45,23 @@ body {
 }
 
 /*NAV 1 COLUMN MOBILEEN*/
-#nav1 {
+#nav1 ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#nav1 > * {
-  flex-basis: 100%;
+#nav1 ul > * {
+  flex-basis: 0;
   flex-grow: 1;
+  text-align: center;
 }
 
 /*LOGON SÄÄDÖT*/
-#companyLogo {
+#nav1 ul .companyLogo {
+  flex-basis: 100%;
   margin-bottom: 2rem;
   opacity: 0.9;
-}
-
-/*NAV1 PALIKOIDEN ASETUKSET*/
-ul {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-ul li {
-  margin-right: 1rem;
-}
-
-ul li > * {
-  flex-basis: 0%;
-  flex-grow: 1;
 }
 
 #pretzels {
@@ -110,16 +100,16 @@ ul li > * {
   display: none;
 }
 #logoDown {
-  align-items: center;
   opacity: 0.4;
+  text-align: center;
 }
-/*
-footer {
-  align-items: center;
-  justify-content: center;
-}
-*/
 
+#footerText {
+  text-align: center;
+  color: lightgrey;
+  font-size: 0.8rem;
+  margin-block-end: 1rem;
+}
 /*ÄLÄ VÄLITÄ NÄISTÄ VIELÄ*/
 /* TABLET */
 /*
