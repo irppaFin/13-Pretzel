@@ -60,7 +60,7 @@ body {
 /*LOGON SÄÄDÖT*/
 #nav1 ul .companyLogo {
   flex-basis: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
   opacity: 0.9;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 #main {
   max-width: 100%;
-  border-top-color: black;
+  border-top-color: rgb(198, 191, 176);
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 1rem;
@@ -110,40 +110,59 @@ body {
   font-size: 0.8rem;
   margin-block-end: 1rem;
 }
-/*ÄLÄ VÄLITÄ NÄISTÄ VIELÄ*/
+
 /* TABLET */
-/*
+
 @media only screen and (min-width: 426px) {
-  #nav1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
+  #nav1 ul .companyLogo {
+    flex-basis: 0;
+    margin-bottom: 0rem;
+    opacity: 0.9;
   }
-
-  #nav1 > * {
-    flex-basis: 100%;
+  #nav1 ul > * {
+    flex-basis: 0;
     flex-grow: 1;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.5rem;
   }
-}
-
-/* DESKTOP */
-/*
-@media only screen and (min-width: 769px) {
-  #wrapper {
-    width: 960px;
+  #p1,
+  #p2,
+  #p3,
+  #p4 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
   }
   #main {
-    width: 60%;
+    max-width: 100%;
+    border-top-color: rgb(198, 191, 176);
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-top: 1rem;
   }
+  h3 {
+    margin: 1rem;
+    font-weight: 700;
+  }
+
   #sidebar {
-    width: 40%;
+    display: block;
+    background-color: rgb(175, 181, 166);
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
-  #sidebar ul {
-    column-count: 2;
+  #sidebar > * {
+    flex-basis: 1;
+    flex-grow: 1;
+    text-align: center;
   }
-  #nav ul li {
-    width: 20%;
+  .callout {
+    background-color: bisque;
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
   }
 }
+/*
+flex-direction: row;
+flex-wrap: wrap;
 */
